@@ -1,5 +1,20 @@
 local utils = {}
 
+function utils.darken(hex, percent)
+    hex = hex:gsub("#","")
+
+    local r = tonumber(hex:sub(1,2),16)
+    local g = tonumber(hex:sub(3,4),16)
+    local b = tonumber(hex:sub(5,6),16)
+
+    r = math.max(0, r - (255 - r) * percent)
+    g = math.max(0, g - (255 - g) * percent)
+    b = math.max(0, b - (255 - b) * percent)
+
+    return string.format("#%02x%02x%02x", r, g, b)
+
+end
+
 function utils.lighten(hex, percent)
     hex = hex:gsub("#","")
 

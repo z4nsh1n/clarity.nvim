@@ -17,6 +17,10 @@ local theme = {
     },
     Keyword = {
         bold = false,
+        -- fg = palette.yellow,
+        -- fg = utils.lighten(palette.blue, -0.5),
+        fg = utils.darken(palette.blue, 0.5),
+        
     },
     String = {
         fg = palette.green,

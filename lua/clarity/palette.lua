@@ -1,5 +1,6 @@
 local palette = {
-    bg = "#101010",
+    -- bg = "#101010",
+    bg = "#181818",
     fg = "#F1F1F1",
     green = "#C3F73A",
     purple = "#822E81",
