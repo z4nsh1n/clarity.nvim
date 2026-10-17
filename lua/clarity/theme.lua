@@ -19,8 +19,8 @@ local theme = {
         bold = false,
         -- fg = palette.yellow,
         -- fg = utils.lighten(palette.blue, -0.5),
-        fg = utils.darken(palette.blue, 0.5),
-        
+        -- fg = utils.darken(palette.blue, 0.5),
+        fg = palette.orange, 
     },
     String = {
         fg = palette.green,
